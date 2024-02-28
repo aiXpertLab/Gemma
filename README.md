@@ -9,9 +9,15 @@ With less expansive models like Gemma, Google aims to provide a smaller, more fo
 “At Google, we believe in making AI helpful for everyone,” the company said in an announcement. “Today, we’re excited to introduce a new generation of open models from Google to assist developers and researchers in building AI responsibly.”
 
 
+## Requirements
+
+- Windows PC with CPU and/or GPU. 
+- Python 3.12.2
+- Install PyTorch based on whether your PC has GPU and GPU model
+
 ## Getting started
 
-1. Download from Hugging Face
+1. Download Gemma from Hugging Face (taking 2b as example. 7b works same way)
    
     - Install HuggingFace CLI: `pip install huggingface-cli`
     - Check installation: `huggingface-cli -h`
@@ -23,7 +29,7 @@ With less expansive models like Gemma, Google aims to provide a smaller, more fo
 2. Next, clone the repository to your local machine:
 
 ```bash
-git clone 
+git clone https://github.com/aiXpertLab/Run-Google-Gemma-Locally-on-Desktop-Laptop.git
 ```
 
 3. (Optional) It's recommended to set up a virtual environment for installing dependencies. You can use `virtualenv` or any other environment manager:
@@ -38,34 +44,11 @@ activate the environment
 source venv/bin/activate
 ```
 
-and install the package and the dependencies
-
-```bash
-pip install .
-```
-
-## Configure Source Picture Pool and Destination Folder
-
-change `source="E:/gDrive/38.Pic/Tele"` to the appropriate picture pool.
-
-change `dest  ="E:/gDrive/38.Pic/Tele/web"` to the destination you want to drop your picture.
-
-## Customize Captions
-
-Open the `captions.txt` file and add your desired captions, with each caption on a separate line.
-
 ## Launch app
 
-Once the picture pool is set up, run the application using the following command:
-
 ```bash
-python src/telegram/autoTele_Pic.py
+python gemma_win_cach.py # if just using models in windows cach
+python gemma_win_local.py # if you saved the models in a specific folder
 ```
 
-
-## Bonus: Batch Convert WEBP to JPG
-Copy BatchConvertWEBP2JPG.py to the target folder. Run the script: 
-
-```python3 BatchConvertWEBP2JPG.py ```
-
-This will convert all the pictures in WEBP to JPG.
+This Python demonstrates the availablity of the Gemma on Windows PC. 
