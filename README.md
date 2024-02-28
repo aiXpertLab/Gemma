@@ -1,17 +1,12 @@
-## Run Google Gemma Locally on the CPU & GPU
+## Run Google Gemma Locally on Desktop/Laptop
 
-> This application selects a random image from a designated picture pool, posts it to a Telegram group, and then moves the picture to a specified destination folder. The caption accompanying the picture is randomly selected from a list provided in Caption.txt.
+> Google Gemma: An AI Model Small Enough to Run on a Laptop. 
+>
+>AI is continuing to transform the business landscape, with countless organisations integrating the technology into their operations. But while massive large language models like ChatGPT have prompted a generative AI (Gen AI) revolution, training these models requires extensive resources, with companies like Meta building out massive compute infrastructure to help support their Gen AI ambitions.
 
+With less expansive models like Gemma, Google aims to provide a smaller, more focused experience for more specific use cases. According to Google, pre-trained and instruction-tuned Gemma models can run on a laptop, workstation or Google Cloud with easy deployment on Vertex AI and Google Kubernetes Engine (GKE).
 
-`Auto Post Pictures to Telegram` is a simple Python program crafted for the purpose of automating the process of posting pictures with captions to Telegram groups. With Python at its core, this project aims to streamline the task of posting images with minimal manual intervention. Additionally, it offers functionality to relocate the posted pictures to another folder to prevent duplicates. The project also includes a script for randomly selecting a file from a local directory.
-
-
-## Key Features:
-- **Python Implementation**: `Auto Telegram` is entirely implemented in Python, making it accessible and easy to understand for developers with varying levels of experience.
-
-- **FastAPI App Deployment**: The project provides an option to deploy a FastAPI app, allowing users to interact with a user-friendly website.
-
-- **WEBP to JPG**: Simplifying the posting process, Auto Telegram includes a script for converting WEBP images to JPG format, ensuring seamless posting of images.
+“At Google, we believe in making AI helpful for everyone,” the company said in an announcement. “Today, we’re excited to introduce a new generation of open models from Google to assist developers and researchers in building AI responsibly.”
 
 
 ## Getting started
@@ -24,10 +19,11 @@
     - search Gemma at http://huggingface.co, and click `Files and versions`
     - copy model name `google/gemma-2b-it`
     - download the whole repo to local `huggingface-cli download --local-dir . google/gemma-2b-it`
+
 2. Next, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/aiXpertLab/Automating-Picture-Posting-to-Telegram-Channel-Using-Python.git
+git clone 
 ```
 
 3. (Optional) It's recommended to set up a virtual environment for installing dependencies. You can use `virtualenv` or any other environment manager:
